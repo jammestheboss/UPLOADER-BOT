@@ -1,6 +1,6 @@
 ## Uploader X  Bot
 ---
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%23F7F7F7&size=22&lines=Uploader+X+Bot+;Uploader+X+Bot)](https://github.com/SpEcHlDe/UPLOADER-BOT)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%23F7F7F7&size=22&lines=Uploader+X+Bot+;Telegram+RoBot+to+Upload+Links)](https://github.com/SpEcHlDe/UPLOADER-BOT)
 Telegram RoBot to Upload Links.
 
 **Features**:
