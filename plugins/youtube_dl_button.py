@@ -29,8 +29,6 @@ from helper_funcs.display_progress import progress_for_pyrogram, humanbytes
 # https://stackoverflow.com/a/37631799/4723940
 from database.access import clinton
 from PIL import Image
-from helper_funcs.help_Nekmo_ffmpeg import generate_screen_shots
-from pyrogram.types import InputMediaPhoto
 
 
 async def youtube_dl_call_back(bot, update):
@@ -269,40 +267,9 @@ async def youtube_dl_call_back(bot, update):
                 logger.info("Did this happen? :\\")
             end_two = datetime.now()
             time_taken_for_upload = (end_two - end_one).seconds
-            #
-            media_album_p = []
-            if images is not None:
-                i = 0
-                caption = "© @xTeamBots"
-                if is_w_f:
-                    caption = "@xurluploaderbot"
-                for image in images:
-                    if os.path.exists(str(image)):
-                        if i == 0:
-                            media_album_p.append(
-                                InputMediaPhoto(
-                                    media=image,
-                                    caption=caption,
-                                    parse_mode="html"
-                                )
-                            )
-                        else:
-                            media_album_p.append(
-                                InputMediaPhoto(
-                                    media=image
-                                )
-                            )
-                        i = i + 1
-            await bot.send_media_group(
-                chat_id=update.message.chat.id,
-                disable_notification=True,
-                reply_to_message_id=update.message.message_id,
-                media=media_album_p
-            )
-            #
             try:
                 shutil.rmtree(tmp_directory_for_each_user)
-                os.remove(thumb_image_path)
+                os.remove(thumbnail)
             except:
                 pass
             await bot.edit_message_text(
