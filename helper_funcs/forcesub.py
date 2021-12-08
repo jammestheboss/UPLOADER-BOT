@@ -24,19 +24,11 @@ async def ForceSub(bot: Client, cmd: Message):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("🤖 Join Updates Channel", url="https://t.me/TeleRoidGroup")
+                        InlineKeyboardButton("🤖 Join Updates Channel", url="https://t.me/nopostinthischannel")
                     ]
                 ]
             ),
             parse_mode="markdown"
-        )
-        return 400
-    except Exception:
-        await bot.send_message(
-            chat_id=cmd.from_user.id,
-            text="Something went Wrong. Contact my [Support Group](https://t.me/TeleRoid14).\n\n**@TheTeleRoid**",
-            parse_mode="markdown",
-            disable_web_page_preview=True
         )
         return 400
     return 200
