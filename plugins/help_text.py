@@ -32,9 +32,6 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQ
 async def help_user(bot, update):
     # logger.info(update)
     await AddUser(bot, update)
-    forcesub = await ForceSub(bot, update)
-    if forcesub == 400:
-        return
     await bot.send_message(
         chat_id=update.chat.id,
         text=Translation.HELP_USER,
@@ -49,36 +46,19 @@ async def help_user(bot, update):
 async def start(bot, update):
     # logger.info(update)
     await AddUser(bot, update)
-    forcesub = await ForceSub(bot, update)
-    if forcesub == 400:
-        return
     await bot.send_message(
         chat_id=update.chat.id,
         text=Translation.START_TEXT.format(update.from_user.mention),
-        parse_mode="html",
-        disable_web_page_preview=True,
-        reply_to_message_id=update.message_id,
-        reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton(text="💰 Donate 💰", url="https://PayPal.me/AbhishekKumarIN47") ], 
-                                             [ InlineKeyboardButton(text="⭕ Support Group ⭕", url="https://t.me/TeleRoid14"),
-                                               InlineKeyboardButton(text="⭕️ Updates Channel ⭕️", url="https://t.me/TeleRoidGroup") ],
-                                             [ InlineKeyboardButton(text="♻ Help ", callback_data="help"),                                                
-                                               InlineKeyboardButton(text="👥 About ", callback_data="aboutbot") ], 
-                                             [ InlineKeyboardButton(text="🔐 Close🔐", callback_data="close") ] ] ) )
-
-@Clinton.on_message(filters.private & filters.command("about") )
-async def about(bot, update):
-    # logger.info(update)
-    await AddUser(bot, update)
-    forcesub = await ForceSub(bot, update)
-    if forcesub == 400:
-        return
-    await bot.send_message(
-        chat_id=update.chat.id,
-        text=Translation.ABOUT_TEXT,
-        parse_mode="html",
-        disable_web_page_preview=True,
-        reply_to_message_id=update.message_id,
-        reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton(text="🚸 Powered By", url="https://t.me/TeleRoidGroup") ],
-                                             [ InlineKeyboardButton(text="⭕ Support Group ⭕", url="https://t.me/TeleRoid14"),
-                                               InlineKeyboardButton(text="💢 Source Code", url="https://github.com/PredatorHackerzZ") ] ] ) )
-
+        reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton(
+                        "Source code ⚡", url="https://github.com/Clinton-Abraham/UPLOADER-BOT"
+                    ),
+                    InlineKeyboardButton("Project Channel 👨🏻‍💻", url="https://t.me/Space_X_bots"),
+                ],
+                [InlineKeyboardButton("Developer 👨‍⚖️", url="https://t.me/clinton_abraham_bot")],
+            ]
+        ),
+        reply_to_message_id=update.message_id
+    )
