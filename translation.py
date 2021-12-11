@@ -1,56 +1,62 @@
 class Translation(object):
     START_TEXT = """Hello! 🙋
 
-This is A Powerful Url Uploader Bot that Supports many sites based on YTDLp. 
+This is A Powerful Url Uploader Bot that Supports many sites based on yt-dlp. 
 
 This Bot can Upload in File and Video Format to Telegram with Permanent Thumbnail Support. 
 
 /help To know how to use me !
-
-Developed with ❤ By @TheTeleRoid 
 """
 
-    HELP_USER = """𝐈𝐭'𝐬 𝐧𝐨𝐭 𝐭𝐡𝐚𝐭 𝐜𝐨𝐦𝐩𝐥𝐢𝐜𝐚𝐭𝐞𝐝 𝐭𝐨 𝐮𝐬𝐞 𝐦𝐞𝐡! 😅
+    HELP_USER = """𝓗𝓸𝔀 𝓽𝓸 𝓤𝓼𝓮 𝓶𝓮 🤔
     
-✪ 𝐒𝐞𝐧𝐝 𝐌𝐞 𝐀 𝐓𝐮𝐦𝐛𝐧𝐚𝐢𝐥 𝐢𝐟 𝐫𝐞𝐪𝐮𝐢𝐫𝐞𝐝. 𝐈𝐭'𝐥𝐥 𝐛𝐞 𝐬𝐚𝐯𝐞𝐝 𝐩𝐞𝐫𝐦𝐚𝐧𝐞𝐧𝐭𝐥𝐲.💯
-✪ 𝐈𝐟 𝐓𝐡𝐮𝐦𝐛𝐧𝐚𝐢𝐥 𝐖𝐚𝐬𝐧'𝐭 𝐒𝐞𝐭 𝐁𝐲 𝐘𝐨𝐮, 𝐈𝐭'𝐥𝐥 𝐁𝐞 𝐀𝐮𝐭𝐨 𝐆𝐞𝐧𝐞𝐫𝐚𝐭𝐞𝐝 𝐅𝐫𝐨𝐦 𝐓𝐡𝐞 𝐅𝐢𝐥𝐞.🥳
-✪ 𝐒𝐞𝐧𝐝 𝐌𝐞 𝐀𝐧𝐲 𝐋𝐢𝐧𝐤 𝐓𝐨 𝐁𝐞 𝐔𝐩𝐥𝐨𝐚𝐝𝐞𝐝 𝐓𝐨 𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦.
-✪ 𝐏𝐫𝐞𝐬𝐬 /𝐝𝐞𝐥𝐞𝐭𝐭𝐡𝐮𝐦𝐛𝐧𝐚𝐢𝐥 𝐓𝐨 𝐃𝐞𝐥𝐞𝐭𝐞 𝐘𝐨𝐮𝐫 𝐂𝐮𝐫𝐫𝐞𝐧𝐭 𝐂𝐮𝐬𝐭𝐨𝐦 𝐓𝐡𝐮𝐦𝐛𝐧𝐚𝐢𝐥.
-✪ 𝐒𝐞𝐥𝐞𝐜𝐭 𝐭𝐡𝐞 𝐛𝐮𝐭𝐭𝐨𝐧.
-   𝐒𝐕𝐢𝐝𝐞𝐨 - 𝐆𝐢𝐯𝐞 𝐅𝐢𝐥𝐞 𝐚𝐬 𝐯𝐢𝐝𝐞𝐨 𝐰𝐢𝐭𝐡 𝐒𝐜𝐫𝐞𝐞𝐧𝐬𝐡𝐨𝐭𝐬
-   𝐃𝐅𝐢𝐥𝐞  - 𝐆𝐢𝐯𝐞 𝐅𝐢𝐥𝐞 𝐰𝐢𝐭𝐡 𝐒𝐜𝐫𝐞𝐞𝐧𝐬𝐡𝐨𝐭𝐬
-   𝐕𝐢𝐝𝐞𝐨  - 𝐆𝐢𝐯𝐞 𝐅𝐢𝐥𝐞 𝐚𝐬 𝐯𝐢𝐝𝐞𝐨 𝐰𝐢𝐭𝐡𝐨𝐮𝐭 𝐒𝐜𝐫𝐞𝐞𝐧𝐬𝐡𝐨𝐭𝐬
-   𝐃𝐅𝐢𝐥𝐞  - 𝐆𝐢𝐯𝐞 𝐅𝐢𝐥𝐞 𝐰𝐢𝐭𝐡𝐨𝐮𝐭 𝐒𝐜𝐫𝐞𝐞𝐧𝐬𝐡𝐨𝐭𝐬
-𝐍𝐁 : 𝐈𝐭 𝐢𝐬 𝐑𝐞𝐜𝐨𝐦𝐦𝐞𝐧𝐝𝐞𝐝 𝐓𝐨 𝐔𝐬𝐞 𝐀 𝐂𝐮𝐬𝐭𝐨𝐦 𝐓𝐡𝐮𝐦𝐛𝐧𝐚𝐢𝐥 𝐁𝐞𝐜𝐚𝐮𝐬𝐞, 𝐒𝐨𝐦𝐞 𝐓𝐢𝐦𝐞 𝐖𝐨𝐧'𝐭 𝐔𝐩𝐥𝐨𝐚𝐝 𝐓𝐡𝐞 𝐅𝐢𝐥𝐞 𝐖𝐢𝐭𝐡𝐨𝐮𝐭 𝐚 𝐂𝐮𝐬𝐭𝐨𝐦 𝐓𝐡𝐮𝐦𝐛𝐧𝐚𝐢𝐥.
-𝐒𝐮𝐩𝐩𝐨𝐫𝐭 𝐆𝐫𝐨𝐮𝐩 : @TeleRoid14
+1. 𝓢𝓮𝓷𝓭 𝓾𝓻𝓵
+         𝓲𝓯 𝔂𝓸𝓾 𝓷𝓮𝓮𝓭 𝓬𝓾𝓼𝓽𝓸𝓶 𝓕𝓲𝓵𝓮 𝓝𝓪𝓶𝓮 𝓭𝓸 𝓛𝓲𝓴𝓮 𝓽𝓱𝓲𝓼 ☛ (𝓛𝓲𝓷𝓴|𝓝𝓮𝔀 𝓝𝓪𝓶𝓮 𝔀𝓲𝓽𝓱 𝓔𝔁𝓽𝓮𝓷𝓼𝓲𝓸𝓷).
+
+2. 𝓢𝓮𝓷𝓭 𝓒𝓾𝓼𝓽𝓸𝓶 𝓣𝓱𝓾𝓶𝓫𝓷𝓪𝓲𝓵(𝓞𝓹𝓽𝓲𝓸𝓷𝓪𝓵).
+
+3. 𝓢𝓮𝓵𝓮𝓬𝓽 𝓽𝓱𝓮 𝓫𝓾𝓽𝓽𝓸𝓷.
+
+   🎞𝓢𝓢+𝓥𝓲𝓭𝓮𝓸 - 𝓕𝓲𝓵𝓮 𝓪𝓼 𝓿𝓲𝓭𝓮𝓸 𝔀𝓲𝓽𝓱 𝓢𝓬𝓻𝓮𝓮𝓷𝓼𝓱𝓸𝓽𝓼
+   𝓢𝓢+𝓕𝓲𝓵𝓮  - 𝓕𝓲𝓵𝓮 𝔀𝓲𝓽𝓱 𝓢𝓬𝓻𝓮𝓮𝓷𝓼𝓱𝓸𝓽𝓼
+   🎞𝓥𝓲𝓭𝓮𝓸  - 𝓕𝓲𝓵𝓮 𝓪𝓼 𝓿𝓲𝓭𝓮𝓸 𝔀𝓲𝓽𝓱𝓸𝓾𝓽 𝓢𝓬𝓻𝓮𝓮𝓷𝓼𝓱𝓸𝓽𝓼
+   𝓕𝓲𝓵𝓮  - 𝓕𝓲𝓵𝓮 𝔀𝓲𝓽𝓱𝓸𝓾𝓽 𝓢𝓬𝓻𝓮𝓮𝓷𝓼𝓱𝓸𝓽𝓼
+   
+   𝓽𝓱𝓪𝓽𝓼 𝓲𝓽, 𝓘 𝔀𝓲𝓵𝓵 𝓓𝓸 𝓡𝓮𝓼𝓽 𝓸𝓯 𝓲𝓽 😌
+
+💾 𝓢𝓮𝓽 𝓣𝓱𝓾𝓶𝓫𝓷𝓪𝓲𝓵
+➠ 𝓢𝓮𝓷𝓭 𝓪 𝓹𝓱𝓸𝓽𝓸 𝓽𝓸 𝓶𝓪𝓴𝓮 𝓲𝓽 𝓪𝓼 𝓹𝓮𝓻𝓶𝓪𝓷𝓮𝓷𝓽 𝓽𝓱𝓾𝓶𝓫𝓷𝓪𝓲𝓵.
+
+🗑 𝓓𝓮𝓵𝓮𝓽𝓲𝓷𝓰 𝓣𝓱𝓾𝓶𝓫𝓷𝓪𝓲𝓵
+➠ 𝓢𝓮𝓷𝓭 /delthumb 𝓽𝓸 𝓭𝓮𝓵𝓮𝓽𝓲𝓷𝓰 𝓽𝓱𝓾𝓶𝓫𝓷𝓪𝓲𝓵.
+
+🖼 𝓢𝓱𝓸𝔀 𝓣𝓱𝓾𝓶𝓫𝓷𝓪𝓲𝓵
+➠ 𝓢𝓮𝓷𝓭 /showthumb 𝓽𝓸 𝓿𝓲𝓮𝔀 𝓬𝓾𝓼𝓽𝓸𝓶 𝓽𝓱𝓾𝓶𝓫𝓷𝓪𝓲𝓵.
+
+🏷 ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : @A_b_r_i_s_h_b_bot
 """
-    ABOUT_TEXT = """<b>🤖 My Name: <a href='https://t.me/URLUploaderV3Bot'> @URLUploaderV3Bot </a></b>
+    ABOUT_TEXT = """<b>🤖 Bot: <a href='https://t.me/my_url_bot'> URL Uploader </a></b>
 
-<b>👨‍💻 Developer :<a href='https://t.me/PredatorHackerzZ'>@TheTeleRoid</a></b>
+<b>👨‍💻 Creator :<a href='https://t.me/A_b_r_i_s_h_B_bot'>Meh</a></b>
 
-<b>📝 Language: 𝐏𝐲𝐭𝐡𝐨𝐧𝟑</b>
+<b>📝 Language:<a href='https://www.python.org'> 𝐏𝐲𝐭𝐡𝐨𝐧𝟑 </a></b>
 
-<b>📡 Server: <a href='https://www.heroku.com'> Heroku </a></b>
+<b>📡 Server:<a href='https://www.heroku.com/'> Heroku </a></b>
 
-<b>📕 Library: Pyrogram 1.0.7</b>
+<b>📕 Library:<a href='https://pyrogram.org/'> Pyrogram v1.2.9</a></b>
 
-<b>💢 Source Code:<a href='https://github.com/PredatorHackerzZ/UPLOADER-BOT'> Click Here </a></b>
+<b>🚸 Credit: Everyone in this journey</b>"""
+    FORMAT_SELECTION = """Select the desired format
 
-<b>📢 Bot Support:<a href='https://t.me/TeleRoid14'> @TeleRoid14</a></b>
-
-<b>🔔 Bot Updates: <a href='https://t.me/TeleRoidGroup'> @TeleRoidGroup</a></b>
-
-<b>🌀 Telegram BotList: <a href='https://t.me/TGRobot_List'> @TGRobot_List</a></b>
-
-<b>🚸 Powered By: <a href='https://t.me/MoviesFlixers_DL'> @HindiWebNetwok</a></b>"""
-    FORMAT_SELECTION = "Select the desired format: <a href='{}'>file size might be approximate</a> \nIf you want to set custom thumbnail, send photo before or quickly after tapping on any of the below buttons.\nYou can use /deletethumbnail to delete the auto-generated thumbnail."
+🎞  - Stream format (left side)
+📁  - File format (right side)"""
     SET_CUSTOM_USERNAME_PASSWORD = """𝐈𝐟 𝐲𝐨𝐮 𝐰𝐚𝐧𝐭 𝐭𝐨 𝐝𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐩𝐫𝐞𝐦𝐢𝐮𝐦 𝐯𝐢𝐝𝐞𝐨𝐬, 𝐩𝐫𝐨𝐯𝐢𝐝𝐞 𝐢𝐧 𝐭𝐡𝐞 𝐟𝐨𝐥𝐥𝐨𝐰𝐢𝐧𝐠 𝐟𝐨𝐫𝐦𝐚𝐭:
 URL | filename | username | password"""
     DOWNLOAD_START = "📥𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐢𝐧𝐠 𝐭𝐨 𝐌𝐲 𝐒𝐞𝐫𝐯𝐞𝐫....."
     UPLOAD_START = "📤𝐔𝐩𝐥𝐨𝐚𝐝𝐢𝐧𝐠 𝐭𝐨 𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦....."
     RCHD_TG_API_LIMIT = "𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐝 𝐢𝐧 {} 𝐬𝐞𝐜𝐨𝐧𝐝𝐬.\n𝐃𝐞𝐭𝐞𝐜𝐭𝐞𝐝 𝐅𝐢𝐥𝐞 𝐒𝐢𝐳𝐞: {}\n𝐒𝐨𝐫𝐫𝐲. 𝐁𝐮𝐭, 𝐈 𝐜𝐚𝐧𝐧𝐨𝐭 𝐮𝐩𝐥𝐨𝐚𝐝 𝐟𝐢𝐥𝐞𝐬 𝐠𝐫𝐞𝐚𝐭𝐞𝐫 𝐭𝐡𝐚𝐧 𝟐𝐆𝐁 𝐝𝐮𝐞 𝐭𝐨 𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦 𝐀𝐏𝐈 𝐥𝐢𝐦𝐢𝐭𝐚𝐭𝐢𝐨𝐧𝐬."
-    AFTER_SUCCESSFUL_UPLOAD_MSG = "𝐓𝐡𝐚𝐧𝐤𝐬 𝐟𝐨𝐫 𝐮𝐬𝐢𝐧𝐠 𝐭𝐡𝐞 𝐁𝐨𝐭 @TheTeleRoid\n\n<b>𝐉𝐨𝐢𝐧 : @MoviesFlixers_DL</b>"
-    AFTER_SUCCESSFUL_UPLOAD_MSG_WITH_TS = "𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐝 𝐢𝐧 {} 𝐬𝐞𝐜𝐨𝐧𝐝𝐬.\n𝐔𝐩𝐥𝐨𝐚𝐝𝐞𝐝 in {} 𝐬𝐞𝐜𝐨𝐧𝐝𝐬.\n\n@TheTeleRoid"
+    AFTER_SUCCESSFUL_UPLOAD_MSG = "Done"
+    AFTER_SUCCESSFUL_UPLOAD_MSG_WITH_TS = "𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐝 𝐢𝐧 {} 𝐬𝐞𝐜𝐨𝐧𝐝𝐬.\n𝐔𝐩𝐥𝐨𝐚𝐝𝐞𝐝 in {} 𝐬𝐞𝐜𝐨𝐧𝐝𝐬."
     SAVED_CUSTOM_THUMB_NAIL = "𝐂𝐮𝐬𝐭𝐨𝐦 𝐯𝐢𝐝𝐞𝐨 / 𝐟𝐢𝐥𝐞 𝐭𝐡𝐮𝐦𝐛𝐧𝐚𝐢𝐥 𝐬𝐚𝐯𝐞𝐝. 𝐓𝐡𝐢𝐬 𝐢𝐦𝐚𝐠𝐞 𝐰𝐢𝐥𝐥 𝐛𝐞 𝐮𝐬𝐞𝐝 𝐢𝐧 𝐭𝐡𝐞 𝐯𝐢𝐝𝐞𝐨 / 𝐟𝐢𝐥𝐞."
     DEL_ETED_CUSTOM_THUMB_NAIL = "✅ 𝐂𝐮𝐬𝐭𝐨𝐦 𝐭𝐡𝐮𝐦𝐛𝐧𝐚𝐢𝐥 𝐜𝐥𝐞𝐚𝐫𝐞𝐝 𝐬𝐮𝐜𝐜𝐞𝐬𝐟𝐮𝐥𝐥𝐲."
     CUSTOM_CAPTION_UL_FILE = "{}"
