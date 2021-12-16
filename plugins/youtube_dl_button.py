@@ -98,8 +98,8 @@ async def youtube_dl_call_back(bot, update):
     mention = user["mention"]
     description = Translation.CUSTOM_CAPTION_UL_FILE.format(mention)
     if "fulltitle" in response_json:
-        description = response_json["fulltitle"][0:1021]
-        # escape Markdown and special characters
+        description = response_json["fulltitle"][:1021]
+            # escape Markdown and special characters
     tmp_directory_for_each_user = Config.DOWNLOAD_LOCATION + "/" + str(update.from_user.id)
     if not os.path.isdir(tmp_directory_for_each_user):
         os.makedirs(tmp_directory_for_each_user)
@@ -288,9 +288,7 @@ async def youtube_dl_call_back(bot, update):
             media_album_p = []
             if images is not None:
                 i = 0
-                caption = "Done"
-                if is_w_f:
-                    caption = "Done"
+                caption = "Done" if is_w_f else "Done"
                 for image in images:
                     if os.path.exists(str(image)):
                         if i == 0:
@@ -307,7 +305,7 @@ async def youtube_dl_call_back(bot, update):
                                     media=image
                                 )
                             )
-                        i = i + 1
+                        i += 1
             await bot.send_media_group(
                 chat_id=update.message.chat.id,
                 disable_notification=True,
