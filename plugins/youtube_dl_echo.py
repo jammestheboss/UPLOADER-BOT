@@ -96,6 +96,12 @@ async def echo(bot, update):
     if youtube_dl_password is not None:
         command_to_exec.append("--password")
         command_to_exec.append(youtube_dl_password)
+    if "hotstar" in url:
+        command_to_exec.append("--geo-bypass-country")
+        command_to_exec.append("IN")
+    if "france" in url:
+        command_to_exec.append("--geo-bypass-country")
+        command_to_exec.append("FR")
     # logger.info(command_to_exec)
     process = await asyncio.create_subprocess_exec(
         *command_to_exec,
