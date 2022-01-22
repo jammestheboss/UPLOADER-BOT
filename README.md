@@ -5,15 +5,15 @@ Telegram RoBot to Upload Links.
 
 **Features**:
 
-👉 Upload [YouTube-dl Supported Links](https://ytdl-org.github.io/youtube-dl/supportedsites.html) to Telegram.
+👉 Upload [yt-dlp Supported Links](https://ytdl-org.github.io/youtube-dl/supportedsites.html) to Telegram.
 
 👉 Upload HTTP/HTTPS as File/Video to Telegram.
 
 👉 Upload zee5, sonyliv, voot, MXplayer and much more 😋
 
-👉 Broadcast message, check total users
-
 👉  Permanent thumbnail Support
+
+👉 Broadcast message
 
 **Heroku Buildpacks**
 ```
@@ -24,6 +24,15 @@ heroku/python
 ```
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://www.heroku.com/deploy?template=https://github.com/PredatorHackerzZ/UPLOADER-BOT)
+
+## BOT COMMANDS
+
+* start - 👻 Check I'm alive or dead
+* help - 📝 How to use this robot
+* broadcast - 💌 Send message to users
+* total - 👨‍👨‍👦‍👦 To get total users count
+* viewthumbnail - 🌌 Current Thumbnail
+* delthumbnail - 🎇 Delete thumbnail
 
 
 
